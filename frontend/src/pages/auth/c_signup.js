@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ClientSignup extends React.Component {
+class C_signup extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         // You can perform client signup validation here
@@ -22,4 +22,4 @@ class ClientSignup extends React.Component {
     }
 }
 
-export default ClientSignup;
+export default C_signup;

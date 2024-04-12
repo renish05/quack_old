@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ClientLogin extends React.Component {
+class C_login extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         // You can perform client login validation here
@@ -20,4 +20,4 @@ class ClientLogin extends React.Component {
     }
 }
 
-export default ClientLogin;
+export default C_login;
