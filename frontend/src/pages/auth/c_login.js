@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../../css/c_login.css';
 
-class C_login extends React.Component {
-    handleSubmit = (event) => {
-        event.preventDefault();
-        // You can perform client login validation here
-    }
+function C_login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-    render() {
-        return (
-            <div>
-                <h2>Client Login</h2>
-                <form id="clientLoginForm" onSubmit={this.handleSubmit}>
-                    <input type="email" id="clientEmail" placeholder="Email" required />
-                    <input type="password" id="clientPassword" placeholder="Password" required />
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-        );
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Perform client login validation here
+    console.log('Email:', email, 'Password:', password); // Example for debugging
+  };
+
+  return (
+    <div>
+      <h2>Client Login</h2>
+      <form id="clientLoginForm" onSubmit={handleSubmit}>
+        <input
+          type="email"
+          id="clientEmail"
+          placeholder="Email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          id="clientPassword"
+          placeholder="Password"
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  );
 }
 
 export default C_login;

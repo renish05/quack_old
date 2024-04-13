@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../css/c_dashboard.css';
+
 
 class C_dashboard extends React.Component {
     handleSubmit = (event) => {

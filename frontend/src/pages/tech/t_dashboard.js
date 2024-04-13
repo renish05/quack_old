@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/t_dashboard.css'
 
 class T_dashboard extends React.Component {
     state = {
@@ -95,9 +96,6 @@ class T_dashboard extends React.Component {
                     </section>
                 </main>
 
-                <footer>
-                    <p>&copy; 2024 Technician Dashboard. All rights reserved.</p>
-                </footer>
             </div>
         );
     }

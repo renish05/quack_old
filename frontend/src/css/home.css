@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-image: url();
+    }
+  
+  .container {
+    position: relative;
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px; /* Add margin to create space below the heading */
+  }
+  
+  .subheading {
+    color: #666; /* Change subheading color */
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .logo {
+    position: absolute;
+    max-width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 200px; /* Adjust the width of the logo as needed */
+  }
+  

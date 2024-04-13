@@ -1,23 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../../css/t_login.css';
 
-class T_login extends React.Component {
-    handleSubmit = (event) => {
-        event.preventDefault();
-        // You can perform technician login validation here
-    }
 
-    render() {
-        return (
-            <div>
-                <h2>Technician Login</h2>
-                <form id="technicianLoginForm" onSubmit={this.handleSubmit}>
-                    <input type="email" id="technicianEmail" placeholder="Email" required />
-                    <input type="password" id="technicianPassword" placeholder="Password" required />
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-        );
-    }
+function T_login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Perform technician login validation here
+    console.log('Email:', email, 'Password:', password); // Example for debugging
+  };
+
+  return (
+    <div>
+      <h2>Technician Login</h2>
+      <form id="technicianLoginForm" onSubmit={handleSubmit}>
+        <input
+          type="email"
+          id="technicianEmail"
+          placeholder="Email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          id="technicianPassword"
+          placeholder="Password"
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  );
 }
 
 export default T_login;

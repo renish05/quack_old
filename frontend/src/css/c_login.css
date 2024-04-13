@@ -8,7 +8,6 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    background-image: url(''); /* Replace 'background.jpg' with the path to your background image */
     background-size: cover;
     position: relative; /* Needed to position the overlay */
 }
@@ -43,7 +42,6 @@ h2 {
 #clientSketch {
     width: 50px;
     height: 50px;
-    background-image: url('client.jpg'); /* Replace 'client.jpg' with the path to your logo image */
     background-size: cover;
     border-radius: 50%;
     margin-right: 10px;

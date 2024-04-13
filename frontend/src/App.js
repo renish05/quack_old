@@ -17,14 +17,14 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/c-signup" component={C_signup} />
-          <Route path="/c-login" component={C_login} />
-          <Route path="/t-singup" component={T_signup} />
-          <Route path="/t-login" component={T_login} />
-          <Route path="/c-dashboard" component={C_dashboard} />
-          <Route path="/t-dashboard" component={T_dashboard} />
-          <Route path="/c-bids" component={C_bids} />
+          <Route path="/" element={<Home />} />  // Optional: remove exact
+          <Route path="/c-signup" element={<C_signup />} />
+          <Route path="/c-login" element={<C_login />} />
+          <Route path="/t-singup" element={<T_signup />} />
+          <Route path="/t-login" element={<T_login />} />
+          <Route path="/c-dashboard" element={<C_dashboard />} />
+          <Route path="/t-dashboard" element={<T_dashboard />} />
+          <Route path="/c-bids" element={<C_bids />} />
         </Routes>
       </div>
     </Router>

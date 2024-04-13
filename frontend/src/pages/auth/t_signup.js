@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../css/t_signup.css';
+
 
 class T_signup extends React.Component {
     handleSubmit = (event) => {

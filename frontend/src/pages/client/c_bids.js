@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../css/c_bids.css';
+
 
 class T_dashboard extends React.Component {
     state = {
