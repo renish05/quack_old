@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/c_login.css';
-
+import Cors from 'Cors';
+ 
 function C_login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
